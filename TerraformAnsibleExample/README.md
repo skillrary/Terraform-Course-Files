@@ -4,7 +4,7 @@
 Create devops key pair and download pem.
 Update permissions on that file to 600
 ```bash
-$ chmod 600 ~/Downloads/devops.pem
+$ chmod 600 devops.pem
 ```
 
 ### Create Terraform Code and Ansible Playbook
