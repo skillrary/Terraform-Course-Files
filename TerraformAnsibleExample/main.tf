@@ -1,9 +1,9 @@
 locals {
-  vpc_id           = "vpc-0548d408bf3549ca0"
-  subnet_id        = "subnet-060a1ae52cf0a73d6"
+  vpc_id           = "vpc-ID"
+  subnet_id        = "subnet-ID"
   ssh_user         = "ubuntu"
-  key_name         = "devops"
-  private_key_path = "~/Downloads/devops.pem"
+  key_name         = "skillrary"
+  private_key_path = "skillrary.pem"
 }
 
 provider "aws" {
@@ -37,8 +37,8 @@ resource "aws_security_group" "nginx" {
 }
 
 resource "aws_instance" "nginx" {
-  ami                         = "ami-0dba2cb6798deb6d8"
-  subnet_id                   = "subnet-060a1ae52cf0a73d6"
+  ami                         = "ami-id"
+  subnet_id                   = "subnet-id"
   instance_type               = "t2.micro"
   associate_public_ip_address = true
   security_groups             = [aws_security_group.nginx.id]
